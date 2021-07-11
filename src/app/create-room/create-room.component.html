@@ -1,0 +1,30 @@
+<h3>Adcione sala</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="room.nome" name="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Data</label>
+      <input type="text" class="form-control" id="date" required [(ngModel)]="room.data" name="date">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Horário de início</label>
+      <input type="text" class="form-control" id="startHour" required [(ngModel)]="room.horarioInicio" name="startHour">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Horário de termino</label>
+        <input type="text" class="form-control" id="endHour" required [(ngModel)]="room.horairioFinal" name="endHour">
+      </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn btn-success" (click)="newRoom()">Add</button> -->
+</div>
