@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  URL_SERVIDOR: 'https://reuniao-de-sala-crud-spring.herokuapp.com',
+  URL_SERVIDOR: 'https://localhost:8080',
 };
 
 /*
