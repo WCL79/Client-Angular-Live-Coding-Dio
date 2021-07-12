@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class RoomService {
 
-  url: string = `${environment.URL_SERVIDOR}/`;
+  url: string = `${environment.URL_SERVIDOR}`;
 
   constructor(private http: HttpClient) { }
 
